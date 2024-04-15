@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { GameServiceService } from './game-service.service';
 import { CommonModule } from '@angular/common';
-import { Deal, Item } from './deal.model';
-import { map } from 'rxjs/operators';
+import { Deal } from './deal.model';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +13,6 @@ import { map } from 'rxjs/operators';
 })
 export class AppComponent implements OnInit {
   dealsArray: Deal[] = [];
-  filteredArray: Item[] = [];
 
   constructor(private deals: GameServiceService) {}
 
@@ -30,7 +28,6 @@ export class AppComponent implements OnInit {
           title: item.title
         };
       });
-      console.log(this.filteredArray);
     });
   }
 }

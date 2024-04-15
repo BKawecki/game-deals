@@ -5,8 +5,3 @@ export interface Deal {
     thumb: string,
     title: string
 }
-
-export interface Item {
-    title: string,
-    salePrice: string
-}

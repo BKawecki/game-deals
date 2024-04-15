@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, filter, map } from 'rxjs';
-import { Deal, Item } from './deal.model';
+import { Deal } from './deal.model';
 
 @Injectable({
   providedIn: 'root'

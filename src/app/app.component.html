@@ -1,7 +1,7 @@
-<!-- <ul>
-    <li *ngFor="let item of bodyArray">{{ item.title }}</li>
-</ul> -->
 <div class="deals">
+    <div class="deals__page-title">
+        <h1>Best Game Deals</h1>
+    </div>
     <div class="deals__container">
         <ul>
             <li *ngFor="let deal of dealsArray">
@@ -10,8 +10,8 @@
                     <h4>{{ deal.title }}</h4>
                 </div>
                 <div class="deals__prices">
-                    <p><s>{{ deal.normalPrice }}</s></p>
-                    <span>{{ deal.salePrice }}</span>
+                    <p>Normal price: <s>{{ deal.normalPrice }}</s></p>
+                    <span>Sale price: {{ deal.salePrice }}</span>
                 </div>
                 <p>Deal rating: {{ deal.dealRating }}</p>
             </li>
