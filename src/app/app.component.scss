@@ -1,0 +1,45 @@
+.deals {
+    &__container {
+        padding: 20px;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                width: 200px;
+                height: 200px;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 10px;
+                border: 4px solid black;
+                border-radius: 20%;
+            }
+        }
+    }
+    &__prices {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+            color: red;
+        }
+    }
+    &__title {
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin: 10px 0;
+
+        h4 {
+            margin: 0;
+            font-size: 15px;
+        }
+    }
+}
